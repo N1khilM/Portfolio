@@ -23,7 +23,7 @@ function Github() {
 
   return (
     <div className="github-section  text-foreground py-12 px-5">
-      <div className=" justify-center">
+      <div className=" justify-center flex">
         <GitHubCalendar
           username="N1khilM"
           blockSize={15}
