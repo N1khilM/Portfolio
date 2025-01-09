@@ -34,6 +34,7 @@ My personal portfolio website, hosted at [https://nikhilmugali-portfolio.vercel.
 - **Next.js** (for SSR, SSG)
 - **Tailwind CSS** (for styling)
 - **React.js** (for interactivity)
+- **Node.js** (for backend)
 - **Vercel** (for deployment)
 
 ---
@@ -68,58 +69,57 @@ Make sure you have `node.js` and `git` installed on your machine.
 
 1. Clone this repository:
 
-   ````bash
-   git clone https://github.com/N1khilM/Portfolio.git```
+   ```bash
+   git clone https://github.com/N1khilM/Portfolio.git
 
-   ````
+   ```
 
 2. Navigate into the project directory:
 
-   ````bash
-   cd Portfolio```
+   ```bash
+   cd Portfolio
 
-   ````
+   ```
 
 3. Install dependencies:
 
-   ````bash
-   npm install```
-   ````
+   ```bash
+   npm install
+   ```
 
 # Running Locally
 
 1. Start the development server:
 
-   ````bash
-   npm run dev```
+   ```bash
+   npm run dev
 
-   ````
+   ```
 
 2. Visit http://localhost:3000 in your browser to see your portfolio live!
 
 # Usage
 
-1. You can customize the content by modifying the following files:
+- You can customize the content by modifying the following files:
 
-   /pages/index.js – Main landing page content.
+  /pages/index.js – Main landing page content.
 
-   /components/Projects.js – List and details of your projects.
+  /components/Projects.js – List and details of your projects.
 
-   /components/ContactForm.js – For updating the contact form (using Formspree or any service).
+  /components/ContactForm.js – For updating the contact form (using Formspree or any service).
 
-   /styles/globals.css – Global styles and customizations.
+  /styles/globals.css – Global styles and customizations.
 
-   To make your portfolio truly your own, feel free to add new components or tweak existing ones.
+  To make your portfolio truly your own, feel free to add new components or tweak existing ones.
 
-2. To make your portfolio truly your own, feel free to add new components or tweak existing ones.
+- To make your portfolio truly your own, feel free to add new components or tweak existing ones.
 
 # Show Your Support
 
-    If you like this website, feel free to give it a ⭐️!
-    You can also buy me a coffee to support the project:
-
-    <a href="https://www.buymeacoffee.com/nikhilm" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60px" width="217px"></a>
+- If you like this website, feel free to give it a ⭐️!
+- You can also buy me a coffee to support the project:
+  <a href="https://www.buymeacoffee.com/nikhilm" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60px" width="217px"></a>
 
 # License
 
-    This project is licensed under the MIT License - see the LICENSE.md file for details.
+- This project is licensed under the MIT License - see the LICENSE.md file for details.
