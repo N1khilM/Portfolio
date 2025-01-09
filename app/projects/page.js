@@ -22,14 +22,6 @@ export default function Projects() {
       link: "https://github.com/N1khilM/TaskManager",
     },
     {
-      title: "Portfolio(ReactJS)",
-      description:
-        "A personal portfolio website showcasing your skills, projects, and experience.",
-      image: "/portfolio.png",
-      link: "https://github.com/N1khilM/portfolio",
-      demo: "https://nikhilmugali-portfolio.vercel.app",
-    },
-    {
       title: "Currency Converter",
       description:
         "A tool for converting currency values with a user-friendly interface.",

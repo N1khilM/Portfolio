@@ -4,7 +4,7 @@ import React from "react";
 import GitHubCalendar from "react-github-calendar";
 
 function Github() {
-  const selectLastHalfYear = (contributions) => {
+  const selectLastYear = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
     const shownMonths = 12;
@@ -31,9 +31,9 @@ function Github() {
           color="white"
           fontSize={16}
           className="github-calendar "
-          transformData={selectLastHalfYear}
+          transformData={selectLastYear}
           labels={{
-            totalCount: "{{count}} contributions in this year",
+            totalCount: "{{count}} contributions in {{year}}",
           }}
           theme={{
             light: [
