@@ -114,12 +114,12 @@ Make sure you have `node.js` and `git` installed on your machine.
 
 - To make your portfolio truly your own, feel free to add new components or tweak existing ones.
 
-# Show Your Support
+## Show Your Support
 
-- If you like this website, feel free to give it a ⭐️!
-- You can also buy me a coffee to support the project:
-- <a href="https://www.buymeacoffee.com/nikhilm" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60px" width="217px"></a>
+If you like this website, feel free to give it a ⭐️!
+
+<a href="https://www.buymeacoffee.com/nikhilm" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60px" width="217px"></a>
 
 # License
 
-- This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
