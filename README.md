@@ -110,9 +110,7 @@ Make sure you have `node.js` and `git` installed on your machine.
 
   /styles/globals.css – Global styles and customizations.
 
-  To make your portfolio truly your own, feel free to add new components or tweak existing ones.
-
-- To make your portfolio truly your own, feel free to add new components or tweak existing ones.
+To make your portfolio truly your own, feel free to add new components or tweak existing ones.
 
 ## Show Your Support
 
