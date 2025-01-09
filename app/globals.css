@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  margin-top: 40px;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+video {
+  position: absolute; /* Make sure it's positioned relative to the body */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+  object-fit: cover; /* This ensures the video maintains its aspect ratio while filling the area */
+  z-index: -1; /* Send the video behind the content */
+}
+
+.myname {
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, pink, silver, silver, pink);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.01);
+}
