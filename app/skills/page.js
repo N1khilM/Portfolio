@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Techskills from "./techskills";
 import Softskills from "./softskills";
 import Tools from "./tools";
-import Github from "../components/github";
+import Github from "./github";
 
 export default function Skills() {
   return (
