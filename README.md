@@ -7,7 +7,7 @@ Check out the live version of my portfolio at:
 
 ---
 
-![Demo Image](./public/portfolio-demo-image.png)
+![Demo Image](./public/readme-img.png)
 
 ---
 
