@@ -77,7 +77,7 @@ function NavBar({ onThemeToggle }) {
         <div
           className={`${
             isExpanded ? "block" : "hidden"
-          } theme place-items-center md:flex  md:space-x-6 absolute md:static md:bg-transparent top-14 left-0 w-full md:w-auto px-6 py-4 md:p-0`}
+          } place-items-center md:flex  md:space-x-6 absolute md:static md:bg-transparent top-14 left-0 w-full md:w-auto px-6 py-4 md:p-0`}
         >
           <Link
             href="/"
