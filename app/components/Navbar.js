@@ -9,9 +9,6 @@ import { usePathname } from "next/navigation";
 import "./Navbar.css";
 
 export const MyLogo = () => {
-  const pathname = usePathname();
-
-  // const strokeColor = pathname === "/" ? "white" : "var(--foreground)";
   const strokeColor = "var(--foreground)";
 
   return (
@@ -19,7 +16,7 @@ export const MyLogo = () => {
       xmlns="http://www.w3.org/2000/svg"
       width="100"
       height="30"
-      aria-label="My Portfolio Logo"
+      aria-label="Portfolio Logo"
     >
       <rect width="50" height="30" fill="none" />
       <path
@@ -30,7 +27,7 @@ export const MyLogo = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
         style={{
-          filter: `drop-shadow(0 0 5px ${strokeColor})`, // Subtle shadow for the logo
+          filter: `drop-shadow(0 0 5px ${strokeColor})`,
         }}
       />
     </svg>
@@ -40,85 +37,61 @@ export const MyLogo = () => {
 function NavBar({ onThemeToggle }) {
   const [isExpanded, setExpanded] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
-
-  // Get current path
   const pathname = usePathname();
-  // Scroll handler to toggle navbar sticky state
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY >= 20);
-    };
 
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY >= 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
-      className={` navbar-fixed theme fixed top-0 left-0 w-full z-10 transition-all `}
+      className={`fixed top-0 left-0 w-full bg-background ${
+        isScrolled ? "navbar-fixed" : ""
+      } transition-all`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4 px-6 md:px-12">
-        {/* Brand Section */}
+      <div className="container mx-auto flex items-center justify-between py-2 px-4 md:px-8">
+        {/* Logo */}
         <Link href="/" className="flex items-center">
           <MyLogo />
         </Link>
 
-        {/* Hamburger Toggle for Mobile */}
-        <button
-          className="md:hidden flex flex-col space-y-1"
-          onClick={() => setExpanded(!isExpanded)}
-        >
-          <span className="block w-6 h-1 bg-foreground"></span>
-          <span className="block w-6 h-1 bg-foreground"></span>
-          <span className="block w-6 h-1 bg-foreground"></span>
+        {/* Mobile Menu Toggle */}
+        <button className="md:hidden" onClick={() => setExpanded(!isExpanded)}>
+          <span className="block w-6 h-0.5 bg-foreground mb-1"></span>
+          <span className="block w-6 h-0.5 bg-foreground mb-1"></span>
+          <span className="block w-6 h-0.5 bg-foreground"></span>
         </button>
 
-        {/* Links Section */}
+        {/* Links */}
         <div
           className={`${
-            isExpanded ? "block" : "hidden"
-          } place-items-center md:flex  md:space-x-6 absolute md:static md:bg-transparent top-14 left-0 w-full md:w-auto px-6 py-4 md:p-0`}
+            isExpanded ? "flex" : "hidden"
+          } md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4 absolute md:static bg-background md:bg-transparent top-12 md:top-auto left-0 w-full md:w-auto px-4 py-2 md:p-0`}
         >
-          <Link
-            href="/"
-            className={`  flex items-center space-x-2 hover:text-teal-400`}
-          >
-            <FiHome /> <span>Home</span>
-          </Link>
+          {[
+            { href: "/", label: "Home", icon: FiHome },
+            { href: "/about", label: "About", icon: FiUser },
+            { href: "/projects", label: "Projects", icon: GoProjectSymlink },
+            { href: "/skills", label: "Skills", icon: FiTool },
+            { href: "/resume", label: "Resume", icon: FiFileText },
+          ].map(({ href, label, icon: Icon }) => (
+            <Link
+              key={href}
+              href={href}
+              className={`flex items-center space-x-1 text-foreground text-sm hover:text-teal-400 transition`}
+            >
+              <Icon /> <span>{label}</span>
+            </Link>
+          ))}
 
-          <Link
-            href="/about"
-            className={`  flex items-center space-x-2 hover:text-teal-400`}
-          >
-            <FiUser /> <span>About</span>
-          </Link>
-
-          <Link
-            href="/projects"
-            className={`  flex items-center space-x-2 hover:text-teal-400`}
-          >
-            <GoProjectSymlink /> <span>Projects</span>
-          </Link>
-          <Link
-            href="/skills"
-            className={` flex items-center space-x-2 hover:text-teal-400`}
-          >
-            <FiTool /> <span>Skills</span>
-          </Link>
-
-          <Link
-            href="/resume"
-            className={`  flex items-center space-x-2 hover:text-teal-400`}
-          >
-            <FiFileText /> <span>Resume</span>
-          </Link>
-
-          {/* GitHub Button */}
+          {/* GitHub Link */}
           <a
             href="https://github.com/N1khilM/Portfolio"
             target="_blank"
             rel="noopener noreferrer"
-            className={`  flex items-center space-x-2 bg-transparent hover:bg-foreground hover:text-background  py-2 px-4 rounded-lg transition`}
+            className="flex items-center space-x-1 text-foreground text-sm bg-transparent hover:bg-foreground hover:text-background py-1 px-3 rounded-md transition"
           >
             <CgGitFork /> <AiFillStar />
           </a>

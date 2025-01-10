@@ -41,3 +41,20 @@
     background-position: 500%;
   }
 }
+
+/* navbar */
+nav {
+  height: auto; /* Automatically adjust height based on content */
+}
+
+.container {
+  padding: 0.5rem 1rem; /* Compact padding */
+}
+
+a {
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+button span {
+  height: 2px; /* Slimmer hamburger menu lines */
+}
