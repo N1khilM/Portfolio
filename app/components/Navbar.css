@@ -44,17 +44,17 @@
 
 /* navbar */
 nav {
-  height: auto; /* Automatically adjust height based on content */
-}
-
-.container {
-  padding: 0.5rem 1rem; /* Compact padding */
+  height: auto;
 }
 
 a {
-  font-size: 0.875rem; /* Smaller font size */
+  font-size: 0.875rem; /* Small font for links */
 }
 
 button span {
-  height: 2px; /* Slimmer hamburger menu lines */
+  height: 2px; /* Thin hamburger lines */
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

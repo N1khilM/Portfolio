@@ -54,7 +54,7 @@ export default function Projects() {
   return (
     <div className="flex-col bg-var(--background) text-var(--foreground)">
       <Navbar />
-      <main className="flex-grow row-start-2 flex flex-col items-center justify-center">
+      <main className="flex-grow pt-4 flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold text-center sm:text-center">
           PROJECTS
         </h1>

@@ -7,12 +7,12 @@ export default function About() {
   return (
     <div className="flex flex-col min-h-screen  bg-dark-900 text-foreground">
       <Navbar />
-      <main className="flex-grow container mx-auto p-6">
+      <main className="flex-grow container mx-auto pt-2">
         <section className="text-center ">
           <h1 className="text-4xl font-bold p-2 text-center sm:text-center">
             ABOUT ME
           </h1>
-          <p className="text-lg p-2 text-var(--foreground) max-w-4xl mx-auto">
+          <p className="text-lg  text-var(--foreground) max-w-4xl mx-auto">
             Welcome! I&apos;m a passionate and dedicated web developer with a
             knack for building dynamic, user-friendly web applications. My
             mission is to bridge creativity with functionality, crafting

@@ -51,9 +51,13 @@ function NavBar({ onThemeToggle }) {
         isScrolled ? "navbar-fixed" : ""
       } transition-all`}
     >
-      <div className="container mx-auto flex items-center justify-between py-2 px-4 md:px-8">
+      <div
+        className="
+  align-items: center
+  justify-content: space-between mx-auto flex items-center justify-between py-2 px-2 md:px-4"
+      >
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items">
           <MyLogo />
         </Link>
 
@@ -68,7 +72,7 @@ function NavBar({ onThemeToggle }) {
         <div
           className={`${
             isExpanded ? "flex" : "hidden"
-          } md:flex md:items-center space-y-4 md:space-y-0 md:space-x-4 absolute md:static bg-background md:bg-transparent top-12 md:top-auto left-0 w-full md:w-auto px-4 py-2 md:p-0`}
+          } md:flex text-2xl md:items-center space-y-4 md:space-y-0 md:space-x-4 absolute md:static bg-background md:bg-transparent top-12 md:top-auto left-0 w-full md:w-auto px-4 py-2 md:p-0`}
         >
           {[
             { href: "/", label: "Home", icon: FiHome },
