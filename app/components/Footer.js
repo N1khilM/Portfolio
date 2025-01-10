@@ -10,10 +10,8 @@ export default function Footer() {
   //         pathname === "/" ? "bg-transparent text-white" : ""
   //       }
   return (
-    <footer
-      className={`theme flex flex-col items-center justify-center gap-0 p-6 `}
-    >
-      <div className="flex items-center justify-center gap-8 mb-2">
+    <footer className={`p-6`}>
+      <div className="flex flex-wrap justify-center gap-8 mb-2">
         <a
           href="https://instagram.com/realnikhill"
           target="_blank"

@@ -13,6 +13,28 @@
     --foreground: #ededed;
   }
 }
+/* styles/globals.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .header {
+    font-size: 18px;
+  }
+}
 
 body {
   margin-top: 40px;

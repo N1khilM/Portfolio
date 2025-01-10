@@ -48,14 +48,10 @@ function NavBar({ onThemeToggle }) {
   return (
     <nav
       className={`fixed top-0 left-0 w-full bg-background ${
-        isScrolled ? "navbar-fixed" : ""
+        isScrolled ? "navbar-fixed" : "navbar-fixed"
       } transition-all`}
     >
-      <div
-        className="
-  align-items: center
-  justify-content: space-between mx-auto flex items-center justify-between py-2 px-2 md:px-4"
-      >
+      <div className="flex flex-wrap  items-center justify-between mx-auto py-2 px-2 md:px-4">
         {/* Logo */}
         <Link href="/" className="flex items">
           <MyLogo />
@@ -65,14 +61,14 @@ function NavBar({ onThemeToggle }) {
         <button className="md:hidden" onClick={() => setExpanded(!isExpanded)}>
           <span className="block w-6 h-0.5 bg-foreground mb-1"></span>
           <span className="block w-6 h-0.5 bg-foreground mb-1"></span>
-          <span className="block w-6 h-0.5 bg-foreground"></span>
+          <span className="block w-6 h-0.5 bg-foreground mb-1"></span>
         </button>
 
         {/* Links */}
         <div
           className={`${
-            isExpanded ? "flex" : "hidden"
-          } md:flex text-2xl md:items-center space-y-4 md:space-y-0 md:space-x-4 absolute md:static bg-background md:bg-transparent top-12 md:top-auto left-0 w-full md:w-auto px-4 py-2 md:p-0`}
+            isExpanded ? "flex place-items-center" : "hidden"
+          } md:flex flex-col md:flex-row text-2xl md:items-center space-y-4 md:space-y-0 md:space-x-4 absolute md:static bg-background md:bg-transparent top-12 md:top-auto left-0 w-full md:w-auto px-4 py-2 md:p-0`}
         >
           {[
             { href: "/", label: "Home", icon: FiHome },
@@ -84,7 +80,7 @@ function NavBar({ onThemeToggle }) {
             <Link
               key={href}
               href={href}
-              className={`flex items-center space-x-1 text-foreground text-sm hover:text-teal-400 transition`}
+              className="flex items-center space-x-1 text-foreground text-sm hover:text-teal-400 transition"
             >
               <Icon /> <span>{label}</span>
             </Link>
