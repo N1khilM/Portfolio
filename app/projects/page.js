@@ -55,17 +55,7 @@ export default function Projects() {
     <div className="flex flex-col min-h-screen p-4 bg-var(--background) text-var(--foreground)">
       <Navbar />
       <main className="flex-grow row-start-2 flex flex-col items-center justify-center">
-        <h1
-          className="text-4xl font-bold text-center sm:text-center"
-          style={{
-            fontSize: "40px", // Adjusted font size for the Projects page
-            fontWeight: "bold",
-            color: "var(--foreground)",
-            letterSpacing: "5px",
-            lineHeight: "1.2",
-            fontFamily: "'Anton', sans-serif",
-          }}
-        >
+        <h1 className="text-4xl font-bold text-center sm:text-center">
           PROJECTS
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 px-4">

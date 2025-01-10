@@ -5,22 +5,13 @@ import { Anton } from "next/font/google";
 import "./globals.css";
 
 const anton = Anton({
-  subsets: ["latin"], // Optional: Add more subsets if needed
-  weight: "400", // Add font weights as per your use
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export default function Home() {
   return (
     <div className="min-h-[calc(100vh-40px)]  flex flex-col bg-var(--background) text-var(--foreground)">
-      {/* <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-      >
-        <source src="/bgvideo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
       <Navbar />
 
       <main className="flex-grow flex items-center justify-center">

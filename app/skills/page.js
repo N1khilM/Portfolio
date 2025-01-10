@@ -11,18 +11,7 @@ export default function Skills() {
     <div className="flex flex-col min-h-screen p-4 bg-var(--background) text-var(--foreground)">
       <Navbar />
       <main className="flex-grow row-start-2 flex flex-col items-center justify-center">
-        <h1
-          className="text-4xl font-bold text-center sm:text-center"
-          style={{
-            fontSize: "40px",
-            fontWeight: "bold",
-            color: "var(--foreground)",
-            textShadow: "3px 3px 6px rgba(0, 0, 0, 0.7)",
-            letterSpacing: "5px",
-            lineHeight: "1.2",
-            fontFamily: "'Anton', sans-serif",
-          }}
-        >
+        <h1 className="text-4xl font-bold text-center sm:text-center">
           SKILLS
         </h1>
         <div className="mt-12 w-full max-w-6xl">

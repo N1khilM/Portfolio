@@ -10,7 +10,7 @@ export default function Contact() {
       <Navbar />
       <main className="flex-grow container mx-auto p-6">
         <section className="text-center my-12">
-          <h1 className="text-4xl font-bold mb-6 theme tracking-wide">
+          <h1 className="flex flex-col min-h-screen p-4 bg-var(--background) text-var(--foreground)">
             Get in Touch
           </h1>
           <p className="text-lg theme max-w-4xl mx-auto">

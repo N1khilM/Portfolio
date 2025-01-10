@@ -21,16 +21,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-video {
-  position: absolute; /* Make sure it's positioned relative to the body */
-  top: 0;
-  left: 0;
-  width: 100vw; /* 100% of the viewport width */
-  height: 100vh; /* 100% of the viewport height */
-  object-fit: cover; /* This ensures the video maintains its aspect ratio while filling the area */
-  z-index: -1; /* Send the video behind the content */
-}
-
 .myname {
   font-size: 2em;
   letter-spacing: 4px;
