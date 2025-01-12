@@ -24,7 +24,7 @@ export default function About() {
           <h2 className="text-2xl font-semibold mb-6 text-center">
             My Philosophy
           </h2>
-          <div className="grid container md:grid-cols-2 gap-12 items-center">
+          <div className="grid container md:grid-cols-2 place-items-center gap-12 items-center">
             <div className="text-var(--foreground) container text-lg leading-relaxed">
               <p>
                 I believe that technology has the power to transform lives, and
