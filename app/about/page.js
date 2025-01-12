@@ -21,7 +21,7 @@ export default function About() {
         </section>
 
         <section className="my-16 ">
-          <h2 className="text-3xl  font-semibold mb-0  text-center">
+          <h2 className="text-2xl font-semibold mb-6 text-center">
             My Philosophy
           </h2>
           <div className="grid container md:grid-cols-2 gap-12 items-center">
@@ -39,8 +39,8 @@ export default function About() {
               </p>
             </div>
             <Image
-              width={600}
-              height={400}
+              width={500}
+              height={300}
               src="/myavatar.jpg"
               alt="My Avatar"
               className="rounded-lg  shadow-lg"
@@ -49,7 +49,7 @@ export default function About() {
         </section>
 
         <section className="my-16   p-8 rounded-lg shadow-foreground shadow-lg">
-          <h2 className="text-3xl font-semibold mb-8 text-center">What I Do</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-center">What I Do</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center  p-6 rounded-lg shadow-foreground shadow-lg hover:scale-105 transition-transform duration-300">
               <h3 className="text-xl font-bold mb-4">Web Development</h3>
@@ -76,7 +76,7 @@ export default function About() {
         </section>
 
         <section className="my-16">
-          <h2 className="text-3xl font-semibold mb-8 text-center">
+          <h2 className="text-2xl font-semibold mb-6 text-center">
             My Journey
           </h2>
           <p className="text-var(--foreground) text-lg max-w-4xl mx-auto text-center">
@@ -89,7 +89,9 @@ export default function About() {
         </section>
 
         <section className="my-12 text-center">
-          <h2 className="text-3xl font-semibold mb-8">Get in Touch</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-center">
+            Get in Touch
+          </h2>
           <p className="text-foreground mb-12">
             I&apos;m always excited to collaborate on new projects and ideas.
             Let&apos;s create something amazing together!

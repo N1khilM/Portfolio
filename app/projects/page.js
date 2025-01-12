@@ -58,7 +58,7 @@ export default function Projects() {
         <h1 className="text-4xl font-bold text-center sm:text-center">
           PROJECTS
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 m-8 px-4">
           {projects.map((project, index) => (
             <div
               key={index}
