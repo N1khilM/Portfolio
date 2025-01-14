@@ -22,25 +22,25 @@ export default function Contact() {
         </section>
 
         {/* Contact Section */}
-        <section className="my-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <section className="my-16 container place-items-center">
+          <div className="grid container grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
-            <div>
+            <div className="container place-items-end">
               <Image
                 src="/contactme.jpg"
                 alt="Contact Me"
-                width={500}
-                height={500}
+                width={350}
+                height={300}
                 className="rounded-lg shadow-md"
               />
             </div>
 
             {/* Contact Info */}
-            <div className="space-y-6 text-center lg:text-left">
+            <div className="space-y-6 container text-center lg:text-left">
               <h2 className="text-2xl font-semibold text-primary-500">
                 Contact Information
               </h2>
-              <p>
+              <p className="flex-grow">
                 Feel free to reach out to me via email or connect on social
                 media. I look forward to hearing from you!
               </p>
