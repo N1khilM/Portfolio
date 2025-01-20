@@ -103,7 +103,7 @@ Make sure you have `node.js` and `git` installed on your machine.
 
   /components/Projects.js – List and details of your projects.
 
-  /components/ContactForm.js – For updating the contact form (using Formspree or any service).
+  /components/Contact.js – For updating the contact information.
 
   /styles/globals.css – Global styles and customizations.
 
