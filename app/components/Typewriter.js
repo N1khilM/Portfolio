@@ -7,7 +7,6 @@ function Type() {
     <div
       className="text-4xl font-bold styledtype"
       style={{
-        color: "",
         animation: "fadeInUp 3s ease-out", // Animation effect for entry
       }}
     >
@@ -24,7 +23,6 @@ function Type() {
         loop={true}
         cursor
         cursorStyle="_"
-        cursorColor="gold"
         typeSpeed={100}
         deleteSpeed={50}
         delaySpeed={1500}

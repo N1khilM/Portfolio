@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #ededed;
   --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
-    --foreground: #ededed;
+    --foreground: #ffffff;
   }
 }
 /* styles/globals.css */
@@ -47,10 +47,9 @@ body {
   font-size: 2em;
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(90deg, pink, silver, silver, pink);
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 0px rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-size: 100%;
   background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.01);
+  -webkit-text-fill-color: var(--foreground);
 }
