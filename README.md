@@ -2,7 +2,7 @@
 
 ## Demo
 
-Check out the live version of my portfolio at: [https://nikhilmugali-portfolio.vercel.app](https://nikhilmugali-portfolio.vercel.app)
+Check out the live version of my portfolio at: [https://portfolionew-inky.vercel.app](https://portfolionew-inky.vercel.app)
 
 ![Demo Image](./public/readme-img.png)
 
